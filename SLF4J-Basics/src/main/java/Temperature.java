@@ -69,7 +69,7 @@ public class Temperature
         slj4jLogger.info("Temperature successfully updated : New Temperature = {}  Old Temperature = {} ",getNew_temperature(),getOld_temperature());
         System.out.println("New Temperature : = "+getNew_temperature()+"\nold Temperature : = "+getOld_temperature()+ " ");
     }
-
+    // delete
     void delete(char choice )
     {
         switch (choice)
