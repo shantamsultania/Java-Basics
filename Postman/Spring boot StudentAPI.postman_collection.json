@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "73e1d87a-d81e-400f-8b3d-75e49b9b5437",
+		"name": "Spring boot StudentAPI",
+		"description": "a Sample Rest API for Spring boot to perform the CRUD operations.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Student 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"102\",\r\n        \"name\": \"shantam\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/studentapi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"studentapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student Post(add)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"103\",\r\n        \"name\": \"new data\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/studentapi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"studentapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student data based on ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/studentapi/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"studentapi",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"103\",\r\n        \"name\": \"Updated data\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/studentapi/103",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"studentapi",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE STUDENT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/studentapi/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"studentapi",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

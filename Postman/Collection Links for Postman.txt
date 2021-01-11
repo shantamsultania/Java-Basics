@@ -1,0 +1,4 @@
+for Spring boot API demo 
+
+https://www.getpostman.com/collections/736d500790162ef9ae68
+
