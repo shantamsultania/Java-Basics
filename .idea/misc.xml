@@ -6,6 +6,8 @@
     <file type="web" url="file://$PROJECT_DIR$/jdbcSpringBoot" />
     <file type="web" url="file://$PROJECT_DIR$/RestApi" />
     <file type="web" url="file://$PROJECT_DIR$/SLF4J-Basics" />
+    <file type="web" url="file://$PROJECT_DIR$/studentApi" />
+    <file type="web" url="file://$PROJECT_DIR$/studentJDBCConnection" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
