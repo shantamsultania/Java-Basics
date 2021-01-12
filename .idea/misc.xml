@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/JDBC" />
+    <file type="web" url="file://$PROJECT_DIR$/jdbcSpringBoot" />
     <file type="web" url="file://$PROJECT_DIR$/RestApi" />
     <file type="web" url="file://$PROJECT_DIR$/SLF4J-Basics" />
   </component>
