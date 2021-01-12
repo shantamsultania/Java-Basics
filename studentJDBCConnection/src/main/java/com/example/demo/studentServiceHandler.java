@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
+import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -13,6 +14,8 @@ public class studentServiceHandler {
     @Autowired
     JdbcTemplate jdbc;
 
+    @Autowired
+    DataSource dataSource;
     // GET
     public List<student> getAll()
     {
@@ -38,7 +41,7 @@ public class studentServiceHandler {
     public String create()
     {
         try {
-            String sql = "create table spring(id VARCHAR(255),name Varchar (255))";
+            String sql = "create table students.spring(id VARCHAR(255),name Varchar (255))";
             jdbc.execute(sql);
             return "table created";
         }catch (Exception e)

@@ -14,7 +14,7 @@ class studentServiceHandlerTest {
 
         studentServiceHandler studentServiceHandler = new studentServiceHandler();
 
-        assertEquals("table created",studentServiceHandler.getAll());
+        assertEquals("table created",studentServiceHandler.create());
 
 
     }

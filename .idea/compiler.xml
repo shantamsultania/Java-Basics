@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="studentApi.demo" target="11" />
       <module name="studentrestapi" target="11" />
     </bytecodeTargetLevel>
   </component>
