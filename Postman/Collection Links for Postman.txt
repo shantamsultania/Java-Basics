@@ -2,3 +2,11 @@ for Spring boot API demo
 
 https://www.getpostman.com/collections/736d500790162ef9ae68
 
+for Spring boot Dao API demo
+
+https://www.getpostman.com/collections/7c3c3dc475b53d56e5a4
+
+for Spring boot + JDBC Connection demo 
+
+https://www.getpostman.com/collections/4cf1eee8d0438f670ba8
+

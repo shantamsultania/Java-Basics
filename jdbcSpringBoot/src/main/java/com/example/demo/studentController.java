@@ -17,10 +17,10 @@ public class studentController {
     @Autowired
     JdbcTemplate jdbc;
 
-    @RequestMapping("/create")
+    @RequestMapping("/create1")
     public String create() {
         try {
-            String sql = "create table students.springboot(id VARCHAR(255),name Varchar (255))";
+            String sql = "create table students.spring(id VARCHAR(255),name Varchar (255))";
             jdbc.execute(sql);
             return "table created";
         }catch (Exception e)

@@ -1,18 +1,17 @@
-package StudentApi;
-
 public class student {
 
-    String id;
-    String name;
+    private String id ;
+    private String name;
+    private String section;
 
-    public student()
+    student()
     {
 
     }
-
-    public student(String id, String name) {
+    public student(String id, String name, String section) {
         this.id = id;
         this.name = name;
+        this.section = section;
     }
 
     public String getId() {
@@ -31,4 +30,11 @@ public class student {
         this.name = name;
     }
 
+    public String getSection() {
+        return section;
+    }
+
+    public void setSection(String section) {
+        this.section = section;
+    }
 }
