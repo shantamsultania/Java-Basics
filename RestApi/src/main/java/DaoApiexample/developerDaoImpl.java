@@ -14,7 +14,6 @@ public class developerDaoImpl implements developerDao{
         developerList.add(new Developer("101","dev1"));
         developerList.add(new Developer("102","dev2"));
         developerList.add(new Developer("103","dev3"));
-
     }
 
     @Override
