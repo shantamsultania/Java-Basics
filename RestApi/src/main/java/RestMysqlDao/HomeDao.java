@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface HomeDao {
 
-    public void CreateTableHome();
+    public String CreateTableHome();
     public List<String> getAllHomes();
     public void addHome();
 

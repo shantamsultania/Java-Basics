@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/anima" />
     <file type="web" url="file://$PROJECT_DIR$/JDBC" />
     <file type="web" url="file://$PROJECT_DIR$/jdbcSpringBoot" />
     <file type="web" url="file://$PROJECT_DIR$/RestApi" />

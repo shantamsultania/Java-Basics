@@ -19,9 +19,10 @@ public class HomeDaoImpl implements HomeDao{
     }
 
     @Override
-    public void CreateTableHome() {
+    public String CreateTableHome() {
         String sql = "create table students.home(id VARCHAR(255),name Varchar (255))";
         jdbc.execute(sql);
+        return "table created";
     }
 
     @Override
