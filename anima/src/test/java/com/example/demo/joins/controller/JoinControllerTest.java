@@ -13,8 +13,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class JoinControllerTest extends BaseTest {
-    private  TeacherDao teacherDao = new TeacherDao();
-    private JoinController joinController = new JoinController();
+
+    private  JoinController joinController;
     // Student
     @Test
     public void addStudent()
@@ -36,6 +36,7 @@ class JoinControllerTest extends BaseTest {
     public void GetStudents()
     {
         mysql();
+        assertNotNull(joinController.getAllStudents(),"null value received");
 
         List<student> studentList = joinController.getAllStudents();
         for (student stu : studentList)
@@ -47,14 +48,13 @@ class JoinControllerTest extends BaseTest {
     public void UpdateStudent()
     {
         mysql();
-
-        System.out.println(joinController.updateStudents(new student("updated","cse2"),2));
+        assertEquals(200,joinController.updateStudents(new student("updated","cse2"),2));
     }
     @Test
     public void DeleteStudent()
     {
         mysql();
-        System.out.println(joinController.deleteStudents(2));
+        assertEquals(200,joinController.deleteStudents(2));
     }
 
     // Teacher
@@ -80,6 +80,7 @@ class JoinControllerTest extends BaseTest {
     {
         mysql();
 
+        assertNotNull(joinController.getAllTeachers(),"null value received ");
         List<teacher> teacherList = joinController.getAllTeachers();
         for (teacher teacher : teacherList)
         {
@@ -91,15 +92,14 @@ class JoinControllerTest extends BaseTest {
     public void UpdateTeacher()
     {
         mysql();
-
-        System.out.println(joinController.updateTeachers(new teacher("updated teacher","cse2"),2));
+        assertEquals(200,joinController.updateTeachers(new teacher("updated teacher","cse2"),2));
     }
 
     @Test
     public void DeleteTeacher()
     {
         mysql();
-        System.out.println(joinController.deleteStudents(2));
+        assertEquals(200,joinController.deleteStudents(2));
     }
 
 
@@ -109,11 +109,10 @@ class JoinControllerTest extends BaseTest {
     public void innerJoin()
     {
         mysql();
-        List<teacher> teacherList = joinController.innerJoin(100);
-        for (teacher teacher : teacherList)
-        {
+        assertNotNull(joinController.innerJoin(100),"please enter a valid id ");
+        teacher teacher = joinController.innerJoin(101);
+        System.out.println();
             System.out.println(teacher.getTId()+" : "+teacher.getTName()+" : "+teacher.getTSection());
-        }
 
     }
 
@@ -121,6 +120,7 @@ class JoinControllerTest extends BaseTest {
     public void filterById()
     {
         mysql();
+        assertNotNull(joinController.filterById(100),"please enter a valid id ");
         teacher teacher = joinController.filterById(100);
         System.out.println(teacher.getTId()+" : "+teacher.getTName()+" : "+teacher.getTSection());
 
@@ -130,6 +130,8 @@ class JoinControllerTest extends BaseTest {
     public void filterBySidAndSName()
     {
         mysql();
+
+        assertNotNull(joinController.filterBySidAndSName(100),"please enter a valid id ");
        List<student> studentList =  joinController.filterBySidAndSName(102);
 
        for (student stu : studentList)

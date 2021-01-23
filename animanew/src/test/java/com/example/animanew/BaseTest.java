@@ -1,16 +1,17 @@
-package com.example.demo;
+package com.example.animanew;
 
 import io.github.biezhi.anima.Anima;
 import org.junit.jupiter.api.BeforeAll;
 
-public class BaseTest {
+public class BaseTest{
     @BeforeAll
     public static void setup()
+
     {
         mysql();
     }
 
-    protected static void mysql() {
+    public static void mysql() {
         Anima.open("jdbc:mysql://localhost:3306/students?useUnicode=true&characterEncoding=utf-8&useSSL=false", "root", "root");
     }
 }
